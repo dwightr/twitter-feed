@@ -1,5 +1,6 @@
 'use strict';
 
+// Read files
 function readFile(selector) {
     return new Promise(function (resolve, reject) {
         try {
@@ -41,7 +42,7 @@ function showTweetsByUser() {
             console.log(usersArray[i].name);
             var tweets = usersArray[i].tweets;
             for(let z = 0; z < tweets.length; z++){
-                console.log(test[z]);
+                console.log(tweets[z]);
             }
         }
     })
