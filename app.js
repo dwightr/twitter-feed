@@ -38,7 +38,14 @@ function showTweetsByUser() {
         });
         
         for (let i = 0; i < usersArray.length; i++){
-            console.log(usersArray[i].name + '\n' + usersArray[i].tweets + '\n');
+            console.log(usersArray[i].name);
+            // console.log(i)
+            var test = usersArray[i].tweets;
+            for(let z = 0; z < test.length; z++){
+                // console.log(usersArray[i][z]);
+                console.log(test[z]);
+            }
+            // console.log(usersArray[i].tweets);
         }
     })
 }
