@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Twitter Feed</title>
+    <style>
+        label {
+            display: block;
+            float: left;
+            width: calc(100%/2 - 4px);
+            border: 1px solid #000;
+        }
+
+        input {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <input type="file" id="file1">
-    <input type="file" id="file2">
+    <label for="file1">Users
+        <input type="file" id="file1">
+    </label>
+    <label for="file2">Tweets
+        <input type="file" id="file2">
+    </label>
 
     <button id="generate">Generate!</button>
 
