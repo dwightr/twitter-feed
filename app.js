@@ -39,13 +39,10 @@ function showTweetsByUser() {
         
         for (let i = 0; i < usersArray.length; i++){
             console.log(usersArray[i].name);
-            // console.log(i)
-            var test = usersArray[i].tweets;
-            for(let z = 0; z < test.length; z++){
-                // console.log(usersArray[i][z]);
+            var tweets = usersArray[i].tweets;
+            for(let z = 0; z < tweets.length; z++){
                 console.log(test[z]);
             }
-            // console.log(usersArray[i].tweets);
         }
     })
 }
